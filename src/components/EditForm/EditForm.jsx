@@ -97,10 +97,11 @@ class EditForm extends Component {
                     <input
                       id="number"
                       name="number"
-                      type="number"
+                      type="tel"
                       value={this.state.number}
                       onChange={this.onNumber}
-                      maxLength="16"
+                      maxLength="10"
+                      placeholder="min 3 numbers"
                     />
                   </div>
                   <div className="form__created">
