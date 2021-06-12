@@ -1,0 +1,99 @@
+.table{
+
+  background-color: white;
+  padding: 15px;
+
+  &__body{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  &__name{
+    margin: 0px 0px 10px 0px;
+  }
+
+  &__thead{
+    font-size: 16px;
+    background-color: #f1f3f6;
+
+    th{
+      padding: 10px 5px;
+      color: #81899d;
+    }
+  }
+
+  &__tbody{
+    font-size: 14px;
+    td{
+      word-break: break-all;
+      padding: 5px 5px;
+      border-bottom: 2px solid #f1f3f6;
+      color: #8c8c8c;
+    }
+  }
+  
+  .edit{
+    border: 0;
+    background: transparent;
+    :hover{
+      cursor: pointer;
+    }
+  }
+
+  .delete{
+    border: 0;
+    background: transparent;
+    :hover{
+      cursor: pointer;
+    }
+  }
+
+  .number{
+    color: blue;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .table{
+
+      padding: 0px;
+
+      &__thead{
+        th{
+          font-size: 12px;
+          padding: 0;
+        }
+      }
+
+      &__tbody{
+        td{
+          font-size: 10px;
+          padding: 0;
+        }
+      }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .table{
+
+      padding: 15px;
+
+      &__thead{
+        th{
+          font-size: 10px;
+        }
+      }
+
+      &__tbody{
+        td{
+          font-size: 8px;
+        }
+      }
+  }
+}
+
+
